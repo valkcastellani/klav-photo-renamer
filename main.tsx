@@ -16,9 +16,18 @@ export default class Main {
     }
 
     private static onReady() {
-        Main.mainWindow = new Main.BrowserWindow({ width: 800, height: 600 });
-        Main.mainWindow
-            .loadURL('file://' + __dirname + '/index.html');
+        //Main.mainWindow = new Main.BrowserWindow({ width: 800, height: 600 });
+        Main.mainWindow = new BrowserWindow({
+            width: 800,
+            height: 600,
+            webPreferences: {
+              nodeIntegration: false,
+              contextIsolation: true,
+              sandbox: true,
+              preload: __dirname + '/preload.js'
+            }
+        });
+        Main.mainWindow.loadURL('file:' + __dirname + '/index.html');
         Main.mainWindow.on('closed', Main.onClose);
     }
 

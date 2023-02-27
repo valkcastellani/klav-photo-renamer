@@ -2,12 +2,12 @@
   "name": "klav-photo-renamer",
   "version": "0.0.1",
   "description": "KLAV Photo Renamer",
-  "main": "electron-start.js",
+  "main": "main.js",
   "author": "Valk Luiz de Oliveira Castellani",
   "license": "MIT",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-//    "start": "electron .",
+    "start": "electron app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
