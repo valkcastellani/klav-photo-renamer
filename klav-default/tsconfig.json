@@ -1,0 +1,10 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "scripts": {
+    "build": "tsc src/electron.tsx",
+    "outDir": "./dist/"
+  }
+}
