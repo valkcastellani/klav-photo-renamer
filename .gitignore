@@ -1,0 +1,22 @@
+# Arquivos gerados pela ferramenta de construção Cargo
+/target/
+Cargo.lock
+
+# Arquivos gerados pelo sistema operacional
+*.swp
+.DS_Store
+Thumbs.db
+
+# Dependências compiladas
+**/*.rs.bk
+
+# Arquivos de log
+log/
+*.log
+
+# Arquivos de documentação
+/doc/
+/target/doc/
+
+# Arquivos de backup
+*~

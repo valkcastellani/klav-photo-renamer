@@ -1,2 +1,13 @@
+[package]
+name = "klav-photo-renamer"
+version = "0.0.1"
+edition = "2021"
+
 [dependencies]
 image-meta = "0.1.1"
+
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
